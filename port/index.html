@@ -1,0 +1,441 @@
+
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MyPortfolio</title>
+  <link rel="stylesheet" href="style/all.min.css">
+  <link rel="stylesheet" href="style/bootstrap.min.css">
+  <link rel="stylesheet" href="style/style.css">
+  <link rel="stylesheet" href="style/media.css">
+  <link rel="icon" href="portfolio.svg">
+
+</head>
+
+<body>
+  <header class="header min-vh-100 d-flex flex-column">
+    <nav class="navbar navbar-expand-md">
+      <div class="container ">
+        <a class="logo" href="#"><span class="logo__text">My </span>portfolio</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <i class="fas fa-bars"></i>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="menu__link" href="#history">Обучение</a>
+            </li>
+            <li class="nav-item">
+              <a class="menu__link" href="#works">Работы</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="menu__link" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Контакты
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="tel:+998332280886">+ 998 33 228 08 86</a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item" href="mailto:khalmukhammedovf@gmail.com">khalmukhammedovf@gmail.com
+                  </a>
+              </div>
+          </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="header__info d-flex flex-column flex-grow-1 justify-content-center ">
+      <div class="container">
+        <h1 class="header__title">Моё портфолио</h1>
+        <p class="header__description">Я Front-End разработчик смогу изготовить сайт по шаблону.</p>
+      </div>
+    </div>
+  </header>
+  <main class="min-vh-100">
+    <section class="container">
+      <div class="row justify-content-center">
+        <article class="col-lg-10 col-12 content text-center d-flex flex-column align-items-center" id="history">
+          <h2 class="content__title">Обучение</h2>
+          <p class="content__description">Я полуцчил оброзование программиста в учебном цернтре It-Labs у самого успешного и опытного программиста Алишера Азимова</p>
+        </article>
+      </div>
+    </section>
+    <section class="slider">
+      <div class="container">
+        <div id="carouselExampleCaptions" class="carousel slide row flex-nowrap align-items-center" data-ride="carousel"
+          data-touch="true">
+          <a class=" col-1 d-none d-md-flex" href="#carouselExampleCaptions" role="button" data-slide="prev">
+            <i class="fad fa-angle-left slider__button"></i>
+          </a>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="d-flex flex-wrap align-items-center">
+                <div class="col-xl-5 col-lg-6">
+                  <img class="slider__img w-100 h-100" src="img/study.png" alt="">
+                </div>
+                <div class="col-xl-7 col-lg-6">
+                  <div class="col-12">
+                    <h3 class="slider__title"><span class="slider__title_color_yellow">Обучение в</span> IT-LABS</h3>
+                    <p class="slider__describtion">It-Labs один из самых хороших учебных центров которая находиться в центре города на данный момент учебный цент активно развивается. </p>
+                    
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- <div class="carousel-item">
+              <div class="d-flex flex-wrap align-items-center flex-xl-row-reverse">
+                <div class="col-xl-5 col-lg-6">
+                  <img class="slider__img w-100 h-100" src="img/study.png" alt="">
+                </div>
+                <div class="col-xl-7 col-lg-6">
+                  <div class="col-12">
+                    <h3 class="slider__title"><span class="slider__title_color_yellow">обучение в</span> PROWEB</h3>
+                    <p class="slider__describtion">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                      eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                      exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+                      reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+                      occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                      Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium,
+                      totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae
+                      dicta sunt explicabo. Nemo enim ipsam voluptatem quia</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="d-flex flex-wrap align-items-center">
+                <div class="col-xl-5 col-lg-6">
+                  <img class="slider__img w-100 h-100" src="img/study.png" alt="">
+                </div>
+                <div class="col-xl-7 col-lg-6">
+                  <div class="col-12">
+                    <h3 class="slider__title"><span class="slider__title_color_yellow">обучение в</span> PROWEB</h3>
+                    <p class="slider__describtion">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                      eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                      exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+                      reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+                      occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                      Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium,
+                      totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae
+                      dicta sunt explicabo. Nemo enim ipsam voluptatem quia</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="d-flex flex-wrap align-items-center flex-row-reverse">
+                <div class="col-xl-5 col-lg-6">
+                  <img class="slider__img w-100 h-100" src="img/study.png" alt="">
+                </div>
+                <div class="col-xl-7 col-lg-6">
+                  <div class="col-12">
+                    <h3 class="slider__title"><span class="slider__title_color_yellow">обучение в</span> PROWEB</h3>
+                    <p class="slider__describtion">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                      eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                      exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+                      reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+                      occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                      Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium,
+                      totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae
+                      dicta sunt explicabo. Nemo enim ipsam voluptatem quia</p>
+                  </div>
+                </div>
+              </div>
+            </div> -->
+          </div>
+          <a class="col-1 d-none d-md-flex justify-content-end" href="#carouselExampleCaptions" role="button"
+            data-slide="next">
+            <i class="fad fa-angle-right slider__button"></i>
+          </a>
+        </div>
+      </div>
+      <section class="container">
+        <div class="row justify-content-center">
+          <article class="col-lg-10 col-12 content text-center d-flex flex-column align-items-center">
+            <h2 class="content__title">Работы</h2>
+            <p class="content__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+              tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.
+            </p>
+          </article>
+        </div>
+      </section>
+    </section>
+    <div class="section-tabs" id="works">
+      <div class="container">
+        <div class="row justify-content-center">
+          <ul class="nav col-lg-7 justify-content-around" id="myTab" role="tablist">
+            <li class="nav-item" role="presentation">
+              <a class="tabs__link active" data-toggle="tab" href="#nike" role="tab">Nike
+              </a>
+            </li>
+           
+            <li class="nav-item" role="presentation">
+              <a class="tabs__link" data-toggle="tab" href="#orange" role="tab">Orange</a>
+            </li>
+            <li class="nav-item" role="presentation">
+              <a class="tabs__link" data-toggle="tab" href="#toshkent" role="tab">Toshkent</a>
+            </li>
+            <li class="nav-item" role="presentation">
+              <a class="tabs__link" data-toggle="tab" href="#strict" role="tab">Strict</a>
+            </li>
+            <li class="nav-item" role="presentation">
+              <a class="tabs__link" data-toggle="tab" href="#uni" role="tab">Unitradeco.uz</a>
+            </li>
+            <li class="nav-item" role="presentation">
+              <a class="tabs__link" data-toggle="tab" href="#well" role="tab">Wellpaint</a>
+            </li>
+            <li class="nav-item" role="presentation">
+              <a class="tabs__link" data-toggle="tab" href="#stone" role="tab">Stone</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="tab-content" id="myTabContent">
+        <div class="tab-pane fade show active" id="nike" role="tabpanel">
+          <div class="container-fluid">
+            <div class="row justify-content-center">
+              <div class="col-md-6 col-12">
+                <img src="img/../Macintosh/ Macintosh.jpg" alt="" class="tabs__img w-100 h-100">
+              </div>
+              <div class="col-md-6 col-11">
+                <div class="tabs__info d-flex flex-column justify-content-between h-100 align-items-start">
+                  <div>
+                    <h3 class="tabs__title">Макет <span class="tabs__title_uppercase">Macintosh</span></h3>
+                    <p class="tabs__description">По данному макету сделал сайт с применением навыков которые получил в ходе уроков</p>
+                  </div>
+                  <!-- <a href="Macintosh/index.html" class="tabs__button">подробнее</a> -->
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="tab-pane fade" id="orange" role="tabpanel">
+          <div class="container-fluid">
+            <div class="row justify-content-center">
+              <div class="col-md-6 col-12">
+                <img src="img/../MyFolio/MyF.jpg" alt="" class="tabs__img w-100 h-100">
+              </div>
+              <div class="col-md-6 col-11">
+                <div class="tabs__info d-flex flex-column justify-content-between h-100 align-items-start">
+                  <div>
+                    <h3 class="tabs__title">Макет <span class="tabs__title_uppercase">My-Folio</span></h3>
+                    <p class="tabs__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                      eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                      exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+                      reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+                      occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                      Sed ut perspiciatis unde omnis iste</p>
+                  </div>
+                  <a href="MyFolio/index.html" class="tabs__button">подробнее</a>.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="tab-pane fade" id="toshkent" role="tabpanel">
+          <div class="container-fluid">
+            <div class="row justify-content-center">
+              <div class="col-md-6 col-12">
+                <img src="img/../" alt="" class="tabs__img w-100 h-100">
+              </div>
+              <div class="col-md-6 col-11">
+                <div class="tabs__info d-flex flex-column justify-content-between h-100 align-items-start">
+                  <div>
+                    <h3 class="tabs__title">Макет <span class="tabs__title_uppercase">golden-studio</span></h3>
+                    <p class="tabs__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                      eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                      exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+                      reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+                      occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                      Sed ut perspiciatis unde omnis iste</p>
+                  </div>
+                  <!-- <a href="nice to meet you/index.html" class="tabs__button">подробнее</a> -->
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="tab-pane fade" id="uni" role="tabpanel">
+          <div class="container-fluid">
+            <div class="row justify-content-center">
+              <div class="col-md-6 col-12">
+                <img src="img/uni.jpeg" alt="" class="tabs__img w-100 h-100">
+              </div>
+              <div class="col-md-6 col-11">
+                <div class="tabs__info d-flex flex-column justify-content-between h-100 align-items-start">
+                  <div>
+                    <h3 class="tabs__title">Сайт  <span class="tabs__title_uppercase">  Unitradeco.uz</span></h3>
+                    <p class="tabs__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                      eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                      exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+                      reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+                      occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                      Sed ut perspiciatis unde omnis iste</p>
+                  </div>
+                  <a href="http://unitradeco.uz/" class="tabs__button">Подробнее</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="tab-pane fade" id="well" role="tabpanel">
+          <div class="container-fluid">
+            <div class="row justify-content-center">
+              <div class="col-md-6 col-12">
+                <img src="img/" alt="" class="tabs__img w-100 h-100">
+              </div>
+              <div class="col-md-6 col-11">
+                <div class="tabs__info d-flex flex-column justify-content-between h-100 align-items-start">
+                  <div>
+                    <h3 class="tabs__title">Макет<span class="tabs__title_uppercase">Wellpaint</span></h3>
+                    <p class="tabs__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                      eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                      exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+                      reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+                      occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                      Sed ut perspiciatis unde omnis iste</p>
+                  </div>
+                  <!-- <a href="http://unitradeco.uz/" class="tabs__button">Подробнее</a> -->
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="tab-pane fade" id="Strict" role="tabpanel">
+          <div class="container-fluid">
+            <div class="row justify-content-center">
+              <div class="col-md-6 col-12">
+                <img src="img/uni.jpeg" alt="" class="tabs__img w-100 h-100">
+              </div>
+              <div class="col-md-6 col-11">
+                <div class="tabs__info d-flex flex-column justify-content-between h-100 align-items-start">
+                  <div>
+                    <h3 class="tabs__title">Сайт<span class="tabs__title_uppercase">Unitradeco.uz</span></h3>
+                    <p class="tabs__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                      eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                      exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+                      reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+                      occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                      Sed ut perspiciatis unde omnis iste</p>
+                  </div>
+                  <a href="http://unitradeco.uz/" class="tabs__button">Подробнее</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="tab-pane fade" id="Stone" role="tabpanel">
+          <div class="container-fluid">
+            <div class="row justify-content-center">
+              <div class="col-md-6 col-12">
+                <img src="img/uni.jpeg" alt="" class="tabs__img w-100 h-100">
+              </div>
+              <div class="col-md-6 col-11">
+                <div class="tabs__info d-flex flex-column justify-content-between h-100 align-items-start">
+                  <div>
+                    <h3 class="tabs__title">Сайт<span class="tabs__title_uppercase">Unitradeco.uz</span></h3>
+                    <p class="tabs__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                      eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                      exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+                      reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+                      occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                      Sed ut perspiciatis unde omnis iste</p>
+                  </div>
+                  <a href="http://unitradeco.uz/" class="tabs__button">Подробнее</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+      </div>
+    </div>
+
+    <section class="container">
+      <div class="row justify-content-center">
+        <article class="col-lg-10 col-12 content text-center d-flex flex-column align-items-center">
+          <h2 class="content__title">Возможости</h2>
+          <div class="col-lg-8 col-md-10 col-12">
+            <div class="accordion" id="accordionExample">
+              <div class="accordion__item">
+                <div class="accordion-header">
+                  <button class="accordion__button d-flex align-items-center w-100" type="button" data-toggle="collapse" data-target="#html">
+                    <i class="fab fa-html5 accordion__icon"></i>html5
+                  </button>
+                </div>
+
+                <div id="html" class="collapse show"
+                  data-parent="#accordionExample">
+                    <p class="accordion__describtion">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium</p>
+                </div>
+              </div>
+              <div class="accordion__item">
+                <div class="accordion-header">
+                  <button class="accordion__button d-flex align-items-center w-100 collapsed" type="button" data-toggle="collapse" data-target="#css3">
+                    <i class="fab fa-css3-alt accordion__icon"></i>css3
+                  </button>
+                </div>
+
+                <div id="css3" class="collapse"
+                  data-parent="#accordionExample">
+                    <p class="accordion__describtion">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium</p>
+                </div>
+              </div>
+              <div class="accordion__item">
+                <div class="accordion-header">
+                  <button class="accordion__button d-flex align-items-center w-100 collapsed" type="button" data-toggle="collapse" data-target="#bootstrap4">
+                    <i class="fab fa-bootstrap accordion__icon"></i>bootstrap4
+                  </button>
+                </div>
+
+                <div id="bootstrap4" class="collapse"
+                  data-parent="#accordionExample">
+                    <p class="accordion__describtion">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </article>
+      </div>
+    </section>
+
+
+
+  </main>
+
+
+  <footer class="footer d-flex flex-column flex-wrap  align-items-center" id="contacts">
+    <a class="logo" href="#"><span class="logo__text">Моё Портфолио</span> </a>
+    <ul class="menu menu_margin menu_media d-flex">            
+      <li class="menu__item"><a href="" class="menu__link menu__link_margin">история</a></li>
+      <li class="menu__item"><a href="" class="menu__link menu__link_margin">работы</a></li>
+    </ul>
+    <ul class="menu menu_media d-flex align-items-center">            
+      <li class="menu__item"><a href="tel:+998332280886" class="menu__link menu__link_margin">+ 998 33 228 08 86</a></li>
+      <li class="menu__item"><a href="mailto:khamukhammedovf@gmail.com" class="menu__link menu__link_margin text-lowercase">khamukhammedovf@gmail.com</a></li>
+    </ul>
+  </footer>
+
+  <script src="js/jquery-3.5.1.slim.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/main.js"></script>
+
+
+<script>
+    new WOW().init();
+</script>
+
+</body>
+
+</html>
